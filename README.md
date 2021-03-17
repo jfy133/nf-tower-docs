@@ -1,36 +1,37 @@
-# Nextflow Tower documentation 
+# Website
 
-## Get started
+This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
-Clone the repository.
-```
-git clone https://github.com/seqeralabs/nf-tower-docs.git
-```
+## Installation
 
-Follow the instructions from https://gohugo.io/getting-started/installing to complete the Hugo installation in your
-local system.
+- Setup `yarn` using https://yarnpkg.com/getting-started/install
 
-Move to the working directory e.g: `cd nf-tower-docs`.
+- Install packages
 
-For Linux users, run to start the Hugo server:
-```
-./hugo.sh server
+```console
+yarn install
 ```
 
-For Mac users, run the following command to start the Hugo server:
+## Local Development
+
+```console
+yarn start
 ```
-hugo server
+
+This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```console
+yarn build
 ```
 
-The result is that a local website is run and can be
-accessed locally at http://localhost:1313.
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
+## Deployment
 
-## Build and publishing 
+```console
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
 
-The docs is build automatically when pushing a change. 
-
-Changes on `master` branch are automatically published to the S3 bucket `help.tower.nf` 
-and accessible thought this address http://help.tower.nf
-
-
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
