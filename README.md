@@ -35,3 +35,8 @@ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
+The docs is build automatically when pushing a change.
+
+Changes on master branch are automatically published to the S3 bucket help.tower.nf and accessible through this address http://help.tower.nf

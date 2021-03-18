@@ -66,8 +66,11 @@ module.exports = {
           editUrl:
             "https://github.com/seqeralabs/nf-tower-docs/tree/master/content/docs",
       
-          routeBasePath: '/'
+          routeBasePath: '/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           },
+
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
