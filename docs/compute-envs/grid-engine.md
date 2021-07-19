@@ -16,6 +16,9 @@ To launch pipelines into a **Grid engine** scheduler from Tower, the following r
 * The cluster queue used to run the Nextflow head job must be able to submit cluster jobs.
 * The Nextflow runtime version **21.02.0-edge** (or later) should be installed on the cluster.
 
+!!! warn 
+    Please use the self-installer binary version of Nextflow, instead of the pre-packaged binary. For example, use [nextflow self-installer script](https://github.com/nextflow-io/nextflow/releases/download/v21.04.2/nextflow) instead of [pre-packaged nextflow-VERSION-all](https://github.com/nextflow-io/nextflow/releases/download/v21.04.2/nextflow-21.04.2-all) binary.
+
 
 ## Compute environment
 

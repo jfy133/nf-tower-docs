@@ -20,6 +20,9 @@ To launch pipelines into a Slurm cluster from Tower, the following requirements 
 * The Nextflow runtime version **21.02.0-edge** (or later) should be installed on the cluster.
 
 
+!!! warn 
+    Please use the self-installer binary version of Nextflow, instead of the pre-packaged binary. For example, use [nextflow self-installer script](https://github.com/nextflow-io/nextflow/releases/download/v21.04.2/nextflow) instead of [pre-packaged nextflow-VERSION-all](https://github.com/nextflow-io/nextflow/releases/download/v21.04.2/nextflow-21.04.2-all) binary.
+
 ## Compute environment
 
 Follow these steps to create a new compute environment for Slurm:
